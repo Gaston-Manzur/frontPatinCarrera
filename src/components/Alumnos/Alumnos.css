@@ -1,0 +1,255 @@
+
+body{
+    background-color: #EAECEE;
+    color: #2C3E50;
+}
+
+
+h1{
+    margin-top: 1rem;
+}
+
+
+.container{
+    text-align: center;
+}
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-block: 2rem;
+}
+
+.titulo{
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+/*Formularios*/
+
+.form-control-mod{
+    background-color: mediumblue;
+   text-align: center;
+   color: white;
+   font-size: 1rem;
+   font-weight: bold;
+   margin-bottom: 1rem;
+   margin-top: 2rem;
+   
+}
+
+.form-edit{
+    display: flex;
+    justify-content: center;
+}
+
+
+.col-fom{
+    width: 30%;
+}
+
+
+.button-edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton3{
+width: 40%;
+margin-left: 30%;
+}
+
+.item-card{
+list-style: none;
+transition: all 300ms;
+}
+
+.item-card:hover{
+    transform: scale(1.15);
+    box-shadow: -1px 3px 24px 4px rgba(119,120,123,0.75);
+    -webkit-box-shadow: -1px 3px 24px 4px rgba(119,120,123,0.75);
+    -moz-box-shadow: -1px 3px 24px 4px rgba(119,120,123,0.75);
+border-radius: 10px;
+margin: 25px 0;
+}
+
+.form-login-register{
+    width: 40%;
+}
+
+.continer-form{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Card */
+.card{
+    width: 18rem;
+}
+
+.card-img{
+    height: 20rem;
+    border-radius: 8px 8px 0 0 ;
+}
+.card-body{
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.7954831590839461) 47%, rgba(0,0,0,1) 90%, rgba(7,62,241,1) 90%, rgba(7,62,241,0.8) 95%, rgba(82,161,33,0.8) 95%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.7954831590839461) 47%, rgba(0,0,0,1) 90%, rgba(7,62,241,1) 90%, rgba(7,62,241,0.8) 95%, rgba(82,161,33,0.8) 95%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.7954831590839461) 47%, rgba(0,0,0,1) 90%, rgba(7,62,241,1) 90%, rgba(7,62,241,0.8) 95%, rgba(82,161,33,0.8) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#52a121",GradientType=1);
+    color: white;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-text{
+    margin-top: 50px;
+   }
+
+.card-img-top{
+    height: 85vh;
+    width: 55%;
+    border: solid 2px white;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.card-img-edit{
+    width: 100%;
+    height: 100%;
+    float: left; 
+    border-radius: 20px;
+}
+
+.card-img-mod{
+    width: 100%;
+    height: 100%;
+  
+}
+
+.detalleAlumnos{
+    display: flex;
+   margin-left: 5%;
+   padding: 3px;
+
+}
+
+.info-alumno{
+    width: 50%;
+}
+
+.tetx-center-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15vh;
+}
+
+.card-header-mod{
+   align-content: center;
+    min-height: 49vh;
+    
+}
+
+.card-title{
+    margin-bottom: -50px;
+    }
+
+
+    
+
+/*Medias Query*/
+
+@media (max-width: 720px){
+    
+    h1{
+        margin-top: 2rem;
+    }
+
+    .container-cards{
+       display: block;
+    }   
+   
+    .card{
+        margin-top: 1rem;
+        width: 80%;
+    }
+
+   .card-header-mod{
+    height: 16vh;
+   }
+    .card-body{
+        height: 22vh;
+    }
+
+    .form-media{
+        display: block;
+       
+    }
+
+    .form-control{
+        margin-left: 80%;
+       width: 400%;  
+    }
+
+    .form-edit{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-fom{
+        width: 20%;
+    }
+
+    .form-edit .form-control-mod{
+        justify-content: center;
+    }
+
+    .boton {
+        margin-left: 0;
+    }
+
+    .boton2{
+        margin-left: 0;
+    }
+
+    .boton3{
+        margin-left: 0;
+        }  
+
+    .detalleAlumnos{
+        display: block;
+       margin-top: 1%;
+       padding: 2rem;
+       border-radius: 10px;
+    }
+
+
+    .card-img-top{
+       width: 80%;
+       height: 40vh;
+       margin-left: -2px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid 2px white;
+        border-radius: 10px;
+        
+    }
+
+    .card-img-edit{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        margin-left: 0.1px;
+    }
+
+   .form-control-log-reg{
+    margin-left: 1%;
+   }
+
+   }
