@@ -18,7 +18,6 @@ import Register from "./components/api/Register";
 import { AuthProvider } from "./components/api/AuthContext";
 import Login from "./components/api/Login";
 import ProtectedRouter from "./components/api/ProtectedRouter";
-import Novedades from "./components/Novedades/Novedades";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -39,7 +38,6 @@ function App() {
                 <Route path="/titulos" element={<Titulos />} />
                 <Route path="/historia" element={<Historia />} />
                 <Route path="/contacto" element={<Contacto />} />
-                <Route path="/novedades" element={<Novedades />} />
               </Route>
             </Routes>
           </main>

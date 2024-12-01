@@ -3,7 +3,7 @@ import React from 'react';
 import { useAuth } from '../api/AuthContext';
 import Login from '../api/Login';
 import { Link, Navigate } from 'react-router-dom';
-import Novedades from '../Novedades/Novedades';
+
 
 
 const Home = () => {

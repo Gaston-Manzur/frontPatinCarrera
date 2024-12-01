@@ -65,7 +65,6 @@ const Navbar = () => {
               <Link className="nav-link" to="/contacto">
                 Contacto
               </Link>
-              <Link className="nav-link" to="/novedades">Novedades</Link>
             </li>
           </ul>
 
