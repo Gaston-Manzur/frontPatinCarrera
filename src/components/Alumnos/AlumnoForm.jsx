@@ -27,7 +27,7 @@ const AlumnoForm = ({ onAlumnoAdded }) => {
     if (foto) data.append('foto', foto);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/alumnos', data, {
+      const response = await axios.post('https://backendpatincarrera.onrender.com/api/alumnos', data, {  /*http://localhost:5000 */
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       onAlumnoAdded(response.data);

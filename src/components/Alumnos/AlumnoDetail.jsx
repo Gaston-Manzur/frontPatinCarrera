@@ -20,7 +20,7 @@ const AlumnoDetail = () => {
   useEffect(() => {
     // Obtener datos del alumno
     axios
-      .get(`http://localhost:5000/api/alumnos/${id}`)
+      .get(`https://backendpatincarrera.onrender.com/api/alumnos/${id}`)   /*http://localhost:5000 */
       .then((response) => {
         setAlumno(response.data);
         setFormData(response.data); // Prellenar el formulario
@@ -44,7 +44,7 @@ const AlumnoDetail = () => {
     if (foto) data.append('foto', foto);
 
     axios
-      .put(`http://localhost:5000/api/alumnos/${id}`, data, {
+      .put(`https://backendpatincarrera.onrender.com/api/alumnos/${id}`, data, {  /*http://localhost:5000 */
         headers: { 'Content-Type': 'multipart/form-data' },
       })
       .then((response) => {
@@ -61,7 +61,7 @@ const AlumnoDetail = () => {
   const handleDelete = () => {
     if (window.confirm('¿Estás seguro de que deseas eliminar este alumno? Esta acción no se puede deshacer.')) {
       axios
-        .delete(`http://localhost:5000/api/alumnos/${id}`)
+        .delete(`https://backendpatincarrera.onrender.com/api/alumnos/${id}`) /*http://localhost:5000 */
         .then(() => {
           alert('Alumno eliminado con éxito');
           navigate('/protegida'); // Redirigir a la lista de alumnos después de eliminar
@@ -97,7 +97,7 @@ const AlumnoDetail = () => {
           </div>
           </div>
         <div className='card-img-top'>
-         {alumno.foto && <img src={`http://localhost:5000/uploads/${alumno.foto}`} alt="Foto del alumno" className='card-img-edit'/>}
+         {alumno.foto && <img src={`https://backendpatincarrera.onrender.com/uploads/${alumno.foto}`} alt="Foto del alumno" className='card-img-edit'/>}
         </div>
         
        
