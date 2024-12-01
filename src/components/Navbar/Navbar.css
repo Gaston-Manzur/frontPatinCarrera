@@ -62,6 +62,10 @@ color: white;
    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
 }
 
+.navbar-toggler{
+   margin-right: 5%;
+}
+
  .logo{
     width: 100px;
    margin-left: -45%;
